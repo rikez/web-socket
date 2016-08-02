@@ -1,18 +1,28 @@
 <!doctype html>
 <html>
 <head>
-  <title></title>
+  <title>Chat app</title>
 
-
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-  <h1>Olá mundo</h1>
+  <div class="wrapper text-white">
+  <h1 class="center">Welcome to the ChatApp</h1>
+    <div class="img"><img src="https://cdn4.iconfinder.com/data/icons/user-15/164/3-128.png"></div>
+    <div class="row">
+      <form class="form" id="msg-form">
+        <input class="input-group" name="input-msg"  placeholder="Type your message here..." type="text">
+        <button class="bt" type="submit"> Send </button>
+      </form>
+    </div>
+    <div class="row message-spot">
 
+    </div>
+  </div>
   <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-  <script type="text/javascript">
-    var socket = io();
-  </script>
+  <script src="/js/app.js"></script>
+
 </body>
 </html>
